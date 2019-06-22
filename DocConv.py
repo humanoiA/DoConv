@@ -28,8 +28,8 @@ def upload_file():
     return render_template('Upload.html')
 @app.route('/return-files', methods=['GET'])
 def return_file():
-    os.system("python Conv.py")
-    os.system('python del_file.py')
+    os.system("python3 Conv.py")
+    os.system('python3 del_file.py')
     return send_file(UPLOAD_FOLDER+"\\Converted.pdf", as_attachment=True)
 if __name__ == '__main__':
     app.run(debug = True)
