@@ -7,7 +7,7 @@ import os
 import comtypes.client
 import os
 app = Flask(__name__)
-UPLOAD_FOLDER = 'C:\\Users\\shubh\\Documents\\ARYU\\DocConv\\uplaods'
+UPLOAD_FOLDER = os.getcwd()+'\\uplaods'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
 @app.route('/')
 def index():

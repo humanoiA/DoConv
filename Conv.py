@@ -1,7 +1,7 @@
 import sys
 import os
 import comtypes.client
-UPLOAD_FOLDER = 'C:\\Users\\shubh\\Documents\\ARYU\\DocConv\\uplaods'
+UPLOAD_FOLDER = os.getcwd()+'\\uplaods'
 from glob import glob
 for files in glob(UPLOAD_FOLDER+'/*.docx'):
     wdFormatPDF = 17

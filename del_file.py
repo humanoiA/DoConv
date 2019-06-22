@@ -5,7 +5,7 @@ from glob import glob
     #_time_list = []
 _now = time.mktime(datetime.now().timetuple())
 _file_name=""
-for files in glob('C:\\Users\\shubh\\Documents\\ARYU\\DocConv\\uplaods'+'/*.docx'):
+for files in glob(os.getcwd()+'\\uplaods'+'/*.docx'):
     _file_name=files
     #_f_time = os.path.getmtime(_file_name) #get file creation/modification time
     #if _now - _f_time > 30:
